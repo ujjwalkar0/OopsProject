@@ -1,0 +1,15 @@
+C:\Users\KarU\Desktop\OoopsProject\bin\Debug\net6.0\OoopsProject.exe
+C:\Users\KarU\Desktop\OoopsProject\bin\Debug\net6.0\OoopsProject.deps.json
+C:\Users\KarU\Desktop\OoopsProject\bin\Debug\net6.0\OoopsProject.runtimeconfig.json
+C:\Users\KarU\Desktop\OoopsProject\bin\Debug\net6.0\OoopsProject.dll
+C:\Users\KarU\Desktop\OoopsProject\bin\Debug\net6.0\OoopsProject.pdb
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.csproj.AssemblyReference.cache
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.AssemblyInfoInputs.cache
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.AssemblyInfo.cs
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.csproj.CoreCompileInputs.cache
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.dll
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\refint\OoopsProject.dll
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.pdb
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\OoopsProject.genruntimeconfig.cache
+C:\Users\KarU\Desktop\OoopsProject\obj\Debug\net6.0\ref\OoopsProject.dll
