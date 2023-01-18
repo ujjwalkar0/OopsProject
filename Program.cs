@@ -7,6 +7,7 @@
             System.Console.Write("Enter the name of the file :");
             return Console.ReadLine()!;
         }
+
         public static void Main()
         {
             Oops o = new Oops();
@@ -28,8 +29,8 @@
                     case "1": o.Create(username, password, fileName()); break;
                     case "2": o.Open(username, password, fileName()); break;
                     case "3": o.Create(username, password, fileName(), true); break;
-                    default : System.Console.WriteLine("Invalid input..."); break;
-                    
+                    default: System.Console.WriteLine("Invalid input..."); break;
+
                 }
             }
             else

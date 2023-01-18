@@ -18,6 +18,30 @@ namespace Program
 
         private bool auth = false;
 
+        private string DecryptString(string encrString)
+        {
+            byte[] b;
+            string decrypted;
+            try
+            {
+                b = Convert.FromBase64String(encrString);
+                decrypted = System.Text.ASCIIEncoding.ASCII.GetString(b);
+            }
+            catch (FormatException fe)
+            {
+                System.Console.WriteLine(fe);
+                decrypted = "";
+            }
+            return decrypted;
+        }
+
+        private string EnryptString(string strEncrypted)
+        {
+            byte[] b = System.Text.ASCIIEncoding.ASCII.GetBytes(strEncrypted);
+            string encrypted = Convert.ToBase64String(b);
+            return encrypted;
+        }
+
         public bool authenticated(string username, string password)
         {
             if ((this.username == username) && (this.password == password))
@@ -43,7 +67,7 @@ namespace Program
                     using (BinaryWriter writer = new BinaryWriter(File.Open(fileName, FileMode.Create)))
                     {
                         System.Console.WriteLine("Write content...");
-                        writer.Write(Console.ReadLine()!);
+                        writer.Write(EnryptString(Console.ReadLine()!));
                     }
                 }
 
@@ -70,7 +94,7 @@ namespace Program
                 {
                     using (BinaryReader read = new BinaryReader(File.Open(fileName, FileMode.Open)))
                     {
-                        Console.WriteLine(read.ReadString());
+                        Console.WriteLine(DecryptString(read.ReadString()));
                     }
                 }
                 else
