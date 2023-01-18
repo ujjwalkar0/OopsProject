@@ -2,8 +2,9 @@ namespace Program
 {
     interface FileManager
     {
-        public void Create();
-        public void Open();
+        public void Create(string username, string password, string fileName);
+        public void Create(string username, string password, string fileName, bool read);
+        public void Open(string username, string password, string fileName);
     }
 
     interface authenticator
@@ -11,7 +12,7 @@ namespace Program
         public bool authenticated(string username, string password);
     }
 
-    class Oops : authenticator
+    class Oops : authenticator,FileManager
     {
         private string username = "ujjwalkar";
         private string password = "123456";
