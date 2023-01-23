@@ -12,13 +12,8 @@ namespace Program
         public bool authenticated(string username, string password);
     }
 
-    class Oops : authenticator,FileManager
+    partial class Oops
     {
-        private string username = "ujjwalkar";
-        private string password = "123456";
-
-        private bool auth = false;
-
         private string DecryptString(string encrString)
         {
             byte[] b;
@@ -42,6 +37,13 @@ namespace Program
             string encrypted = Convert.ToBase64String(b);
             return encrypted;
         }
+    }
+    partial class Oops : authenticator, FileManager
+    {
+        private string username = "ujjwalkar";
+        private string password = "123456";
+
+        private bool auth = false;
 
         public bool authenticated(string username, string password)
         {
